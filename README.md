@@ -18,11 +18,13 @@ Parameters:
 -m or --mincount: The minimum number of times the kmer must be observed to make it to the output file
 -t -t --triggers: A list of the triggers, must be in the form \"A,BB,CCC\" with quotation marks.
 
-Run example:
-For an input file named sequences.fq, using a trigger site of the base 'G', a mincount of 5, a word size of 27, and output file of kmers-A-trigger-30bp-min5.txt the command would be
+Run example
+For an input file named sequences.fq, using a trigger site of the base 'G', a mincount of 5, a word size of 27, and output file of kmers-A-trigger-30bp-min5.txt the command would be:
+
 ./kmer-extract-by-trigger-site.py -f sequences.fq -o kmers-G-trigger-30bp-min5.txt -w 27 -m 5 -t "G"
 
 The same example, but done with the triggers "ATA" and "GTGGC" would be:
+
 ./kmer-extract-by-trigger-site.py -f sequences.fq -o kmers-2_triggers-30bp-min5.txt -w 27 -m 5 -t "ATA,GTGGC"
 
 NOTE: As the kmer counts are kept in a dictionary in main memory, 
