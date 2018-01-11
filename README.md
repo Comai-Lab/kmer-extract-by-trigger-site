@@ -1,5 +1,5 @@
 # kmer-extract-by-trigger-site
-A script for extracting kmers (k base pair sized words) from fastq sequencing files after a specific trigger sequence.
+A script for extracting kmers (k base pair sized words) from fastq sequencing files AFTER a specific trigger sequence.
 
 Descritpion:
 This program parses through a fastq sequence file, looking for the instance of a defined
@@ -7,6 +7,7 @@ or set of defined subsequences. These can be as small as one base, such as 'A', 
 would be approximatley 1/4 sampling assuming no GC bias, or a set of long triggers, 
 such as "GATTACA, ACACGTGC". The triggers can be as long or short as desired, as
 long as the longest trigger is shorter than the shortest read in in the fastq file.
+NOTE: This script takes the kmer after the trigger, it does not include the trigger itself.
 
 To Run:
 ./kmer-extract-by-trigger-site.py <parameters>
