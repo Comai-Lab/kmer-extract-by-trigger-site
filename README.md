@@ -13,7 +13,7 @@ To Run:
 ./kmer-extract-by-trigger-site.py <parameters>
 
 Parameters:  
--f or -- file: The inpout fastq file  
+-f or -- file: The input fastq file  
 -o or --output_file: the output kmer list file  
 -w or --wordsize: The kmer word size desired, often 20-45 bp  
 -m or --mincount: The minimum number of times the kmer must be observed to make it to the output file  
